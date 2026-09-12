@@ -40,7 +40,7 @@ class TaskManager:
                 return
         print(f"Tarea no encontrada: #{id}")
 
-    def delete_task(self):
+    def delete_task(self, id):
         for task in self._tasks:
             if task.id == id:
                 self._tasks.remove(task)
